@@ -1,6 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require("inquirer")
+const fs = require("fs")
 const generateMarkdown = require("./utils/generateMarkdown");
+
 
 // Create a function that returns a license badge based on which license is passed in
 // add a packet that would import generate file
@@ -16,10 +18,20 @@ const questions = [
        message: "What is your app title?",
     },
     {
-        type: "list",
-        name: "license",
-        message: "Pick one of the following licenses",
-        choices: ["MIT", "Apache", "IBM"]
+      type: "input",
+      name: "email",
+      message: "What is your email?" 
+    },
+    {
+      type: "input",
+      name: "username",
+      message: "What is your github username?"
+    }
+    {
+      type: "list",
+      name: "license",
+      message: "Pick one of the following licenses",
+      choices: ["MIT", "Apache", "IBM"]
     },
     {
       type: "input",
@@ -29,6 +41,7 @@ const questions = [
     {
       type: "input",
       name: "installation",
+      default: "npm i",
       message: "Please enter any installation instructions"
     },
     {
@@ -40,10 +53,11 @@ const questions = [
       type: "input",
       name: "contribution",
       message: "Please enter any contributors"
-    }
+    },
     {
       type: "input",
       name: "tests",
+      default: "npm test",
       message: "Please enter any testing instructions" 
     }
 ];
