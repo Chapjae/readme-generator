@@ -12,7 +12,7 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
        type: "input",
-       name: "apptitle",
+       name: "title",
        message: "What is your app title?",
     },
     {
@@ -20,6 +20,31 @@ const questions = [
         name: "license",
         message: "Pick one of the following licenses",
         choices: ["MIT", "Apache", "IBM"]
+    },
+    {
+      type: "input",
+      name: "description",
+      message: "Please enter a description for your app"
+    },
+    {
+      type: "input",
+      name: "installation",
+      message: "Please enter any installation instructions"
+    },
+    {
+      type: "input",
+      name: "useage",
+      message: "Please enter any useage information."
+    },
+    {
+      type: "input",
+      name: "contribution",
+      message: "Please enter any contributors"
+    }
+    {
+      type: "input",
+      name: "tests",
+      message: "Please enter any testing instructions" 
     }
 ];
 
