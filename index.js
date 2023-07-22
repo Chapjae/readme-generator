@@ -71,9 +71,7 @@ inquirer
   )
     // need to save the answer to the questions somehow
   .then((answers) => {
-    console.log(answers)
     let markdown = generateMarkdown(answers)
-    console.log(markdown)
     writeToFile("README.md", markdown)
 // create content from the answers, potentially put them together into one long string (call generateMarkDown function?)
 // call writeToFile

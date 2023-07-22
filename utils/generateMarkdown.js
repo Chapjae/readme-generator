@@ -27,14 +27,15 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-  ## Table of Contents ##
-    [Description](#description)
-    [Installation](#installation)
-    [Usage](#usage)
-    [Contributions](#contributions)
-    [License](#license)
-    [Contact](#contact)
-    [Test](#test)
+  ## Table of Contents 
+    
+  [Description](#description)<br>
+  [Installation](#installation)<br> 
+  [Usage](#usage)<br>
+  [Contributions](#contributions)<br>
+  [License](#license)<br>
+  [Contact](#contact)<br>
+  [Test](#test)<br>
 
   ## Installation
   
@@ -50,7 +51,7 @@ function generateMarkdown(data) {
   
   ## License
   
-  [!${data.license}]${renderLicenseBadge(data.license)}
+  ${renderLicenseBadge(data.license)}
   
   ## Contact
 
