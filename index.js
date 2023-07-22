@@ -26,12 +26,12 @@ const questions = [
       type: "input",
       name: "username",
       message: "What is your github username?"
-    }
+    },
     {
       type: "list",
       name: "license",
       message: "Pick one of the following licenses",
-      choices: ["MIT", "Apache", "IBM"]
+      choices: ["MIT", "Perl", "Apache", "IBM", "GPL  3.0",  "None"],
     },
     {
       type: "input",
@@ -73,7 +73,7 @@ inquirer
   .then((answers) => {
     console.log(answers)
     let markdown = generateMarkdown(answers)
-    
+    writeToFile("README.md", markdown)
 // create content from the answers, potentially put them together into one long string (call generateMarkDown function?)
 // call writeToFile
 }).catch((error) => {
@@ -84,6 +84,7 @@ console.log(error);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 //  create the readme
+    fs.writeFile(fileName, data)
 }
 
 // TODO: Create a function to initialize app
