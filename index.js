@@ -46,7 +46,7 @@ const questions = [
     },
     {
       type: "input",
-      name: "useage",
+      name: "usage",
       message: "Please enter any useage information."
     },
     {
@@ -73,6 +73,7 @@ inquirer
   .then((answers) => {
     console.log(answers)
     let markdown = generateMarkdown(answers)
+    console.log(markdown)
     writeToFile("README.md", markdown)
 // create content from the answers, potentially put them together into one long string (call generateMarkDown function?)
 // call writeToFile
@@ -84,7 +85,8 @@ console.log(error);
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
 //  create the readme
-    fs.writeFile(fileName, data)
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.error(err) : console.log("success"))
 }
 
 // TODO: Create a function to initialize app

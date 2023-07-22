@@ -4,17 +4,17 @@
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
-      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+      return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"
     case "Perl":
-      return "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)"
+      return "![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg))"
     case "Apache": 
-      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+      return "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"
     case "IBM":
-      return "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)"
+      return "![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)"
     case "GPL 3.0":
-      return "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+      return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)"
     default:
-      "None"
+      return "None"
   }
 }
 
@@ -27,15 +27,14 @@ function generateMarkdown(data) {
   ## Description
   ${data.description}
 
-
   ## Table of Contents ##
-    *[Description](#description)
-    *[Installation](#installation)
-    *[Usage](#usage)
-    *[Contributions](#contributions)
-    *[License](#license)
-    *[Contact](#contact)
-    *[Test](#test)
+    [Description](#description)
+    [Installation](#installation)
+    [Usage](#usage)
+    [Contributions](#contributions)
+    [License](#license)
+    [Contact](#contact)
+    [Test](#test)
 
   ## Installation
   
@@ -47,19 +46,19 @@ function generateMarkdown(data) {
   
   ## Contributions
   
-  ${data.contributions}
+  ${data.contribution}
   
   ## License
   
-  ${data.license}
+  [!${data.license}]${renderLicenseBadge(data.license)}
   
   ## Contact
-  
+
   ${data.username}
   ${data.email}
 
   ## Test
-  ${data.test}
+  ${data.tests}
   `;
 }
 
