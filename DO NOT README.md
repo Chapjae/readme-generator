@@ -1,7 +1,7 @@
-# Read Me Generator #
+#  #
   
   ## Description
-  qwe
+  
 
   ## Table of Contents 
     
@@ -15,24 +15,24 @@
 
   ## Installation
   
-  qwe 
+  npm i 
   
   ## Usage
   
-  qwe
+  
   
   ## Contributions
   
-  qwe
+  
   
   ## License
   
-  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
   
   ## Contact
 
-  qwe
-  qwe
+  
+  
 
   ## Test
   npm test

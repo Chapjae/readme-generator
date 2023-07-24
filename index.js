@@ -31,7 +31,7 @@ const questions = [
       type: "list",
       name: "license",
       message: "Pick one of the following licenses",
-      choices: ["MIT", "Perl", "Apache", "IBM", "GPL  3.0",  "None"],
+      choices: ["MIT", "Perl", "Apache", "IBM", "Mozilla",  "None"]
     },
     {
       type: "input",
@@ -72,7 +72,7 @@ inquirer
     // need to save the answer to the questions somehow
   .then((answers) => {
     let markdown = generateMarkdown(answers)
-    writeToFile("README.md", markdown)
+    writeToFile("DO NOT README.md", markdown)
 // create content from the answers, potentially put them together into one long string (call generateMarkDown function?)
 // call writeToFile
 }).catch((error) => {

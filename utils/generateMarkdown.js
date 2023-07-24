@@ -11,8 +11,8 @@ function renderLicenseBadge(license) {
       return "![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"
     case "IBM":
       return "![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)"
-    case "GPL 3.0":
-      return "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)"
+    case "Mozilla":
+      return "![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)"
     default:
       return "None"
   }
