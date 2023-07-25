@@ -1,5 +1,7 @@
 #  #
   
+  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  
   ## Description
   
 
@@ -27,7 +29,7 @@
   
   ## License
   
-  ![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)
+  This app has no licenses.
   
   ## Contact
 
