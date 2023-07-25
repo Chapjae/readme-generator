@@ -1,6 +1,4 @@
-// Consider making all three of these just one function
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Get the badge icons for the choices
 function renderLicenseBadge(license) {
   switch (license) {
     case "MIT":
@@ -18,6 +16,7 @@ function renderLicenseBadge(license) {
   }
 }
 
+// Get the badge information
 function renderBadgeInfo(license) {
   switch (license) {
     case "MIT":
@@ -34,10 +33,9 @@ function renderBadgeInfo(license) {
       return "This app has no licenses."
   }
 }
-// TODO: Create a function to generate markdown for README
+
+// create the string template for the README using answers passed from index.js
 function generateMarkdown(data) {
-  // the data that will be return from this function, be mindful of using MD language for this function.
-  // it will potentially be generated directly onto the final readme file.
   return `# ${data.title} #
   
   ${renderLicenseBadge(data.license)}
