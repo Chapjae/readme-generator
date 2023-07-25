@@ -1,9 +1,9 @@
-#  #
+# The best App #
   
-  [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+  [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
   
   ## Description
-  
+  This app is the best app ever in the history of ever
 
   ## Table of Contents 
     
@@ -17,25 +17,25 @@
 
   ## Installation
   
-  npm i 
+  none 
   
   ## Usage
   
-  
+  none
   
   ## Contributions
   
-  
+  just me
   
   ## License
   
-  This app is covered under the Apache License.
+  This app is covered under the Perl License.
   
   ## Contact
 
-  
-  
+  bestappmakerguy
+  thebestappmaker@bestestapp.com
 
   ## Test
-  npm test
+  nope
   

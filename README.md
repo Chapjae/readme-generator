@@ -5,18 +5,22 @@
     
   ## Installation
   
-  Users will have to have node installed onto their local machines in order to run this app. 
+  Users will have to have node installed onto their local machines in order to run this app.  
   
   ## Usage
   
-  From the command line, navigate to the root directory of the index.js file. From there, simply run type in "node index.js" and you will be begin the app's prompt script.
+  From the command line, navigate to the root directory of the index.js file. From there, simply run type in "node index.js" and you will be begin the app's prompt script. Refer to the attached video for a demonstration.
+
+  [Link to the Video](https://youtu.be/iVReBFpESWQ)
   
   
   ## Technologies Used
 
-  qwe
-  qwe
+  Javascript <br>
+  Node.js <br>
+  Inquirer.js <br>
 
   ## Links
-  npm test
+  [Github Repo](https://github.com/Chapjae/readme-generator)
+
   
