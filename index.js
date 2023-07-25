@@ -72,7 +72,7 @@ inquirer
     // need to save the answer to the questions somehow
   .then((answers) => {
     let markdown = generateMarkdown(answers)
-    writeToFile("DO NOT README.md", markdown)
+    writeToFile("Please README.md", markdown)
 // create content from the answers, potentially put them together into one long string (call generateMarkDown function?)
 // call writeToFile
 }).catch((error) => {

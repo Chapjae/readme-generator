@@ -18,8 +18,8 @@ function renderLicenseBadge(license) {
   }
 }
 
-function renderBadgeInfo(badgeInfo) {
-  switch (badgeInfo) {
+function renderBadgeInfo(license) {
+  switch (license) {
     case "MIT":
       return "This app is covered under the MIT License."
     case "Perl":
@@ -69,7 +69,7 @@ function generateMarkdown(data) {
   
   ## License
   
-  ${renderBadgeInfo(data.badgeInfo)}
+  ${renderBadgeInfo(data.license)}
   
   ## Contact
 
