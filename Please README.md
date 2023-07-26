@@ -3,7 +3,7 @@
   [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
   
   ## Description
-  This app is the best app ever in the history of ever
+  This app is the best app in the history of ever
 
   ## Table of Contents 
     
@@ -33,7 +33,7 @@
   
   ## Contact
 
-  bestappmakerguy
+  [besappmakerguy](https://github.com/besappmakerguy)<br>
   thebestappmaker@bestestapp.com
 
   ## Test
